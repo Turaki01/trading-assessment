@@ -1,1 +1,176 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Gilroy";
+  src: url('assets/fonts/gilroy/gilroy_heavy-webfont.eot');
+  src: url('assets/fonts/gilroy/gilroy_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_heavy-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_heavy-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_heavy-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_heavy-webfont.svg#gilroyheavy') format('svg');
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/gilroy/gilroy_black-webfont.eot');
+  src: url('/assets/fonts/gilroy/gilroy_black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_black-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_black-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_black-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_black-webfont.svg#gilroyblack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/gilroy/gilroy_extrabold-webfont.eot');
+  src: url('/assets/fonts/gilroy/gilroy_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_extrabold-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_extrabold-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_extrabold-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_extrabold-webfont.svg#gilroyextrabold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/gilroy/gilroy_bold-webfont.eot');
+  src: url('/assets/fonts/gilroy/gilroy_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_bold-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_bold-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_bold-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_bold-webfont.svg#gilroybold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/gilroy/gilroy_semibold-webfont.eot');
+  src: url('/assets/fonts/gilroy/gilroy_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_semibold-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_semibold-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_semibold-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_semibold-webfont.svg#gilroysemibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/gilroy/gilroy_medium-webfont.eot');
+  src: url('/assets/fonts/gilroy/gilroy_medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_medium-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_medium-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_medium-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_medium-webfont.svg#gilroymedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/gilroy/gilroy_regular-webfont.eot');
+  src: url('/assets/fonts/gilroy/gilroy_regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_regular-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_regular-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_regular-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_regular-webfont.svg#gilroyregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/gilroy/gilroy_light-webfont.eot');
+  src: url('/assets/fonts/gilroy/gilroy_light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_light-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_light-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_light-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_light-webfont.svg#gilroylight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/assets/fonts/gilroy/gilroy_ultralight-webfont.eot');
+  src: url('/assets/fonts/gilroy/gilroy_ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/gilroy/gilroy_ultralight-webfont.woff2') format('woff2'),
+  url('/assets/fonts/gilroy/gilroy_ultralight-webfont.woff') format('woff'),
+  url('/assets/fonts/gilroy/gilroy_ultralight-webfont.ttf') format('truetype'),
+  url('/assets/fonts/gilroy/gilroy_ultralight-webfont.svg#gilroyultralight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Gilroy", sans-serif;
+  overflow-x: hidden;
+}
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.button {
+  height: 50px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: #079C72;
+  color: #fff
+}
+
+.button-primary-outline {
+  border: 1px solid #079C72;
+  color: #079C72;
+  background: #fff;
+}

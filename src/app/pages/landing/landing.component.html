@@ -1,0 +1,123 @@
+<app-nav></app-nav>
+<header>
+
+  <div class="header-container ">
+    <div>
+      <h2 class="header-container__header-text">Lorem ipsum dolor?
+        Excepteur sint occaecat!</h2>
+
+      <p class="header-container__header-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <div class="landing-button-container" style="margin-top: 2rem">
+        <button class="button button-primary">OPEN REAL ACCOUNT</button>
+
+        <button class="button button-primary-outline" style="background: #000">OPEN PRACTICE ACCOUNT</button>
+      </div>
+
+      <p class="header-container__terms">Forex trading involves risk. Losses can exceed deposits. <span
+        class="header-container__terms__link">*Terms apply.</span></p>
+    </div>
+    <div>
+      <img src="assets/svg/hero-img.svg" alt="globe">
+    </div>
+  </div>
+</header>
+
+<section class="account-container">
+  <h2 class="account-header">Lorem ipsum dolor sit ame?</h2>
+
+  <p class="account-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <div class="account-features-container">
+    <div class="account-features" *ngFor="let feature of ListOfAccountFeatures">
+      <div class="account-features__image">
+        <div>{{feature.identifier}}</div>
+        <div><img [src]=feature.image [alt]=feature.key></div>
+      </div>
+      <p>{{feature.description}}</p>
+    </div>
+  </div>
+
+
+  <p class="account-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+  <div class="landing-button-container" style="margin-top: 45px">
+    <button class="button button-primary">OPEN REAL ACCOUNT</button>
+
+    <button class="button button-primary-outline">OPEN PRACTICE ACCOUNT</button>
+  </div>
+
+  <p class="account-terms">Forex trading involves risk. Losses can exceed deposits. <span class="account-terms__link">*Terms apply.</span>
+  </p>
+</section>
+
+<section class="features-container">
+  <h2 class="features-container-header">Lorem ipsum dolor? Excepteur sint occaecat!</h2>
+
+  <p class="features-container-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam.</p>
+
+  <div class="features-screen-display">
+    <h4 class="features-screen-display__screen-text">Screen {{ActiveScreen}}</h4>
+    <img src="assets/svg/laptop.svg" alt="screen" class="features-screen-display__laptop">
+  </div>
+
+  <div class="features-card-container">
+    <div class="features-card" (click)="toggleActiveScreen(i + 1)" *ngFor="let feature of ListOfFeatures; index as i"
+         [ngClass]="ActiveScreen == i + 1 ? 'features-card--active' : ''">
+      <h4 class="features-card__header">{{feature.title}}</h4>
+      <p class="features-card__subtext">{{feature.description}}</p>
+    </div>
+  </div>
+
+  <div class="feature-card-mobile-container">
+    <div class="feature-card-mobile-element" *ngFor="let feature of ListOfFeatures; index as i">
+      <div class="feature-card-mobile-element__screen"> Screen {{i + 1}}</div>
+      <h4 class="feature-card-mobile-element__header">{{feature.title}}</h4>
+      <p>{{feature.description}}</p>
+    </div>
+  </div>
+
+  <div class="sub-feature-container">
+    <div>
+      <h3 class="sub-feature-container__header">Lorem ipsum dolor?</h3>
+      <p class="sub-feature-container__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="sub-feature-element" *ngFor="let subFeature of ListOfSubFeatures">
+        <img src="assets/svg/sub-feat-arrow.svg" alt="pointer">
+        <div>
+          <p class="sub-feature-element__header">{{subFeature.title}}</p>
+          <p class="sub-feature-container__subtext">{{subFeature.description}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <img class="sub-feat-bg" src="assets/svg/skeleton-device.svg" alt="Device">
+    </div>
+  </div>
+</section>
+
+<section class="notification-container">
+  <h3 class="notification-container__header">Lorem ipsum dolor sit amet consectetur!*</h3>
+
+  <div>
+    <div class="landing-button-container" style="margin-top: 2rem">
+      <button class="button button-primary">OPEN REAL ACCOUNT</button>
+
+      <button class="button button-primary-outline" style="background: #000">OPEN PRACTICE ACCOUNT</button>
+    </div>
+
+    <p class="notification-container__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud. <span
+        class="notification-container__subtext__link">*Terms apply.</span></p>
+  </div>
+</section>
+
+<app-footer></app-footer>

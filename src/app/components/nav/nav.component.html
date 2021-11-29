@@ -1,0 +1,59 @@
+<nav class="nav nav-desktop">
+  <img src="assets/svg/logo.svg" class="nav__logo" alt="logo"/>
+
+  <div class="nav__items">
+    <div class="menu-item">Lorem</div>
+    <div class="menu-container">
+      <div class="menu-item">Consectetur</div>
+      <div class="dropdown-content">
+        <div class="dropdown-content__title">LOREM IPSUM</div>
+
+        <div class="dropdown-content__items">
+          Lorem Ipsum
+        </div>
+        <div class="dropdown-content__items">
+          Lorem Ipsum
+        </div>
+        <div class="dropdown-content__items">
+          Lorem Ipsum
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">Lorem & Ipsum</div>
+    <div class="menu-item">Dolor</div>
+    <div class="menu-item">Amet</div>
+
+
+    <button class="button button-primary">OPEN ACCOUNT</button>
+
+    <div class="menu-item">Login</div>
+  </div>
+</nav>
+
+
+<nav class="mobile-nav">
+  <img (click)="onToggle()" [src]="ToggleMenu ? 'assets/svg/close.svg' : 'assets/svg/hamburger.svg'" class="hamburger" alt="hamburger">
+  <img src="assets/svg/logo.svg" class="nav__logo" alt="logo"/>
+
+  <div class="overlay" [ngClass]="ToggleMenu ? 'overlay__active' : ''">
+    <div class="overlay__content">
+      <div>Login</div>
+      <div>Lorem <img src="assets/svg/down-arrow.svg" alt="arrow"/></div>
+      <div (click)="onMenuDropdown()" [ngStyle]="{'color': IsDropdown ? '#079C72' : '#fff' }">Consectur  <img [src]="IsDropdown ? 'assets/svg/up-arrow.svg' : 'assets/svg/down-arrow.svg' " alt="arrow"/></div>
+      <div class="menu-inner" *ngIf="IsDropdown">
+        <div class="menu-inner__title">LOREM IPSUM</div>
+        <div>Lorem Ipsum</div>
+        <div>Lorem Ipsum</div>
+        <div>Lorem Ipsum</div>
+      </div>
+      <div>Lorem & Ipsum <img src="assets/svg/down-arrow.svg" alt="arrow"/></div>
+      <div>Dolor <img src="assets/svg/down-arrow.svg" alt="arrow"/></div>
+      <div>Amet <img src="assets/svg/down-arrow.svg" alt="arrow"/></div>
+
+      <div class="button-container">
+        <button class="button button-primary">OPEN ACCOUNT</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
